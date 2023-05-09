@@ -1,3 +1,21 @@
+## Next Mall
+
+다양한 상품을 올리고 판매할 수 있는 웹 사이트
+
+### 기능
+1. 로그인
+2. 상품 등록 및 삭제 (식료품, 가전, 강의 등)
+3. 상품 조회
+4. 장바구니
+5. 상품 링크 공유
+6. 상품 조회수 통계
+7. 상품 검색
+8. 상품 결제 (예약자 정보 저장. 실제 화폐 결제는 오프라인)
+
+
+--- 
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
