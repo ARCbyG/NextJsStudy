@@ -6,7 +6,13 @@ import styles from './page.module.css'
 export default function Home() {
   // 초기값 설정
   const [x, setX] = useState(0);
+  const [y, setY] = useState(0);
 
+
+  // count 변경
+  function handleTest() {
+    setY(y + 1)
+  }
 
   // count 변경
   function handleCountChange(addCount: number) {
@@ -19,9 +25,10 @@ export default function Home() {
       setX(0)
     }
     else {
-      console.log(x)
+      // console.log(x)
+      console.log(x, 'x');
     }
-  })
+  }, [x])
 
 
   // const [person, setPerson] = useState({
@@ -55,6 +62,12 @@ export default function Home() {
     <main className={styles.main}>
       <div>
         Count: {x}
+      </div>
+      <div>
+        Count: {y}
+      </div>
+      <div>
+        <button onClick={(e) => handleTest()}>테스트</button>
       </div>
       <div>
         <button onClick={(e) => handleCountChange(1)}>증가</button>
