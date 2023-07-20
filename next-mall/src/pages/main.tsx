@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from '../app/page.module.css'
 import { Button } from '@/common/button';
+import { Mall } from '@/common/mall';
 import { useState } from 'react';
 
 export default function Home() {
@@ -33,6 +34,8 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
+      <Mall onClick={() => handleCountChange(1)} label="증가" />
+      
       <div>
         Count: {x}
       </div>
